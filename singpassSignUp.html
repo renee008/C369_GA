@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>SingPass</title>
+
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('images/signup.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        h2 {
+            color: white;
+        }
+
+        button {
+            margin-top: 70px; 
+            display: block;
+            margin: 30px auto;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h2>Sign Up with SingPass</h2>
+        <img src="images/singpass.jpg" alt="singpass qr code">
+        <button id="login" onclick="redirection()" type="submit">Continue</button>
+    </div>
+
+     <!-- Bootstrap JS and dependencies -->
+     <script>
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+        function redirection() {
+            window.location.href = 'dashboard.html';
+        }
+
+
+    </script>
+</body>
+</html>
