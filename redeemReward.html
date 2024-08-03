@@ -149,30 +149,21 @@
     </div>
     <div class="text-center">
         <div class="button-margin">
-            <button type="button" class="btn btn-danger">Cancel</button>
+            <button type="button" class="btn btn-danger" onclick="cancelRewards()">Cancel</button>
             <button id="points" onclick="confirmRewards()" type="button" class="btn btn-success">Confirm</button>
         </div>
     </div>
     
     <script>
         function confirmRewards() {
-            var points = 500;
-
-            var currentPoints = 1200
-
-            var newPoints = currentPoints - points;
 
             if (confirm(`Are you sure you want to redeem this reward?`)) {
-                alert('Transaction has been stored on blockchain.');
-                // Redirect to dashboard with updated points
-                window.location.href = "dashboard.html?reward=" + newPoints;
+                window.location.href="verification4.html"
             }
         }
 
-        // Function to get query parameters from the URL
-        function getParameterByName(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
+        function cancelRewards() {
+            window.location.href="rewards.html"
         }
 
     </script>

@@ -86,7 +86,7 @@
                             <p class="card-text" id="balance" name="balance">$5,000.00</p>
                         </div>
                     </div>
-                    <button onclick="window.location.href='card.html'" class="btn btn-primary mt-4">View Card</button>
+                    <button onclick="card()" class="btn btn-primary mt-4">Transfers and Payments</button>
                 </div>
 
                 <div class="col-md-4">
@@ -183,6 +183,10 @@
         var points = getParameterByName('reward');
         if (points) {
             document.getElementById("reward").textContent = (points)
+        }
+
+        function card() {
+            window.location.href = 'verification3.html';
         }
     </script>
 </body>

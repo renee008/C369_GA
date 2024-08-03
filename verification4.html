@@ -39,8 +39,6 @@
         button:hover {
             background-color: lightblue;
         }
-
-        
     </style>
 </head>
 
@@ -61,14 +59,28 @@
 
     </div>
 
-
     <script>
-    
+
         function redirect() {
-            window.location.href = 'dashboard.html';
+            var points = 500;
+
+            var currentPoints = 1200
+
+            var newPoints = currentPoints - points;
+
+            window.location.href = "dashboard.html?reward=" + newPoints;
         }
-    
-    </script> 
+        
+
+        // Function to get query parameters from the URL
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+
+    </script>
 
 </body>
+
 </html>
