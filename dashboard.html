@@ -143,8 +143,8 @@
                                     </tr>
                                     <tr>
                                         <td><b>CREDIT PURCHASE</b> Koi - 28 June</td>
-                                        <td class="text-right">- $2.00</td>
-                                        <td class="text-right">+2 points</td>
+                                        <td class="text-right">- $10.00</td>
+                                        <td class="text-right">+10 points</td>
                                     </tr>
                                     <tr>
                                         <td><b>CREDIT PURCHASE</b> Liho - 27 June</td>
@@ -182,7 +182,7 @@
         // Update the points displayed on the dashboard
         var points = getParameterByName('reward');
         if (points) {
-            document.getElementById("reward").textContent = (points)
+            document.getElementById("reward").textContent = points + 'points'
         }
 
         function card() {
