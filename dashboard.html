@@ -83,7 +83,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">You Have: (SGD)</h5>
-                            <p class="card-text" id="balance" name="balance">$5,000.00</p>
+                            <p class="card-text" id="currentBalance" name="currentBalance">$5,000.00</p>
                         </div>
                     </div>
                     <button onclick="card()" class="btn btn-primary mt-4">Transfers and Payments</button>
@@ -96,7 +96,8 @@
                             <p class="card-text">$0</p>
                         </div>
                     </div>
-                    <button onclick="window.location.href='account.html'" class="btn btn-primary mt-4">View Account Details</button>
+                    <button onclick="window.location.href='account.html'" class="btn btn-primary mt-4">View Account
+                        Details</button>
                 </div>
 
                 <div class="col-md-4">
@@ -106,7 +107,8 @@
                             <p class="card-text" id="reward" name="reward">1200 points</p>
                         </div>
                     </div>
-                    <button onclick="window.location.href='rewards.html'" class="btn btn-primary mt-4">View Rewards</button>
+                    <button onclick="window.location.href='rewards.html'" class="btn btn-primary mt-4">View
+                        Rewards</button>
                 </div>
             </div>
 
@@ -151,7 +153,7 @@
                                         <td class="text-right">- $5.00</td>
                                         <td class="text-right">+5 points</td>
                                     </tr>
-                                    
+
                                 </tbody>
                             </table>
                         </div>
@@ -173,12 +175,13 @@
             return urlParams.get(name);
         }
 
-        // Update the balance displayed on the dashboard
-        var balance = getParameterByName('balance');
+        // Update the points displayed on the dashboard
+        var balance = getParameterByName('currentBalance');
         if (balance) {
-            document.getElementById("balance").textContent = "$" + parseFloat(balance).toFixed(2);
+            document.getElementById("currentBalance").textContent ='$' + balance +'.00'
         }
 
+    
         // Update the points displayed on the dashboard
         var points = getParameterByName('reward');
         if (points) {
